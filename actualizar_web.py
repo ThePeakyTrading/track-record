@@ -38,7 +38,7 @@ print("Conectando a MetaTrader 5...")
 if mt5.initialize():
     autorizado = mt5.login(config.MT5_LOGIN, password=config.MT5_PASSWORD, server=config.MT5_SERVER)
     if autorizado:
-        deals = mt5.history_deals_get(fecha_inicio, datetime.now())
+        deals = mt5.history_deals_get(fecha_inicio, datetime(2030, 1, 1))
         if deals:
             for deal in deals:
                 # En MT5, deal.entry == 1 significa cerrar una posición

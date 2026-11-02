@@ -1,9 +1,9 @@
 {
     "metricas": {
-        "win_rate": 33.33,
-        "profit_factor": 0.9,
-        "total_trades": 6,
-        "retorno_total_pct": -0.04
+        "win_rate": 42.86,
+        "profit_factor": 1.15,
+        "total_trades": 7,
+        "retorno_total_pct": 0.05
     },
     "curva": [
         {
@@ -46,6 +46,13 @@
             "simbolo": "NAS100",
             "origen": "MT5",
             "crecimiento_pct": -0.04,
+            "resultado": "WIN"
+        },
+        {
+            "fecha": "2026-11-02 12:46",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 0.05,
             "resultado": "WIN"
         }
     ]

@@ -38,7 +38,8 @@ print("Conectando a MetaTrader 5...")
 if mt5.initialize():
     autorizado = mt5.login(config.MT5_LOGIN, password=config.MT5_PASSWORD, server=config.MT5_SERVER)
     if autorizado:
-        deals = mt5.history_deals_get(fecha_inicio, datetime(2030, 1, 1))
+        # Corregido: Fecha lejana en el futuro para evitar problemas de zona horaria
+        deals = mt5.history_deals_get(fecha_inicio, datetime(2030, 1, 1)) 
         if deals:
             for deal in deals:
                 # En MT5, deal.entry == 1 significa cerrar una posición
@@ -62,8 +63,8 @@ else:
 # Orden estricto: del más viejo al más nuevo (para que el gráfico vaya de izq a der)
 todos_los_trades.sort(key=lambda x: x["timestamp_ms"])
 
-capital_ficticio = 10000 
-balance = capital_ficticio
+capital = 520 
+balance = capital
 ganadoras = 0
 perdedoras = 0
 g_profit = 0.0
@@ -80,7 +81,7 @@ for t in todos_los_trades:
         g_loss += abs(pnl)
         
     balance += pnl
-    crecimiento = ((balance - capital_ficticio) / capital_ficticio) * 100
+    crecimiento = ((balance - capital) / capital) * 100
     fecha_str = datetime.fromtimestamp(t["timestamp_ms"]/1000).strftime('%Y-%m-%d %H:%M')
     
     curva.append({
@@ -100,7 +101,7 @@ datos_exportar = {
         "win_rate": round(win_rate, 2),
         "profit_factor": round(profit_factor, 2),
         "total_trades": total,
-        "retorno_total_pct": round(((balance - capital_ficticio) / capital_ficticio) * 100, 2)
+        "retorno_total_pct": round(((balance - capital) / capital) * 100, 2)
     },
     "curva": curva
 }

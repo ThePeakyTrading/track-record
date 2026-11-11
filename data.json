@@ -1,9 +1,9 @@
 {
     "metricas": {
-        "win_rate": 50.0,
-        "profit_factor": 1.76,
-        "total_trades": 12,
-        "retorno_total_pct": 11.03
+        "win_rate": 28.0,
+        "profit_factor": 1.19,
+        "total_trades": 25,
+        "retorno_total_pct": 6.21
     },
     "curva": [
         {
@@ -88,6 +88,97 @@
             "simbolo": "NAS100",
             "origen": "MT5",
             "crecimiento_pct": 11.03,
+            "resultado": "WIN"
+        },
+        {
+            "fecha": "2026-11-09 14:18",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 10.23,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-09 14:19",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 9.03,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-09 14:30",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 8.58,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-09 16:16",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 6.66,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-09 18:38",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 5.54,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-09 18:38",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 4.02,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-10 08:00",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 1.55,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 07:27",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": -0.37,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 15:26",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": -2.28,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 15:49",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": -3.37,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 17:21",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": -5.02,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 17:42",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": -6.6,
+            "resultado": "LOSS"
+        },
+        {
+            "fecha": "2026-11-11 20:10",
+            "simbolo": "NAS100",
+            "origen": "MT5",
+            "crecimiento_pct": 6.21,
             "resultado": "WIN"
         }
     ]
